@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .text-field{
+      @apply w-full p-3 text-gray-900 border
+             border-gray-300 rounded-lg bg-gray-50 text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700
+             dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+    }
+    .register-button{
+      @apply text-white bg-btn-bg-2 hover:bg-hover-btn-bg focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium 
+      rounded-lg text-sm p-3 text-center
+    }
+    .logo{
+      @apply text-cu-logo font-semibold text-2xl
+    }
+    .logout-btn{
+      @apply bg-btn-bg-2 text-cu-text-cl2 hover:bg-hover-btn-bg focus:outline-none font-medium 
+      rounded text-xs p-2 text-center
+    }
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
